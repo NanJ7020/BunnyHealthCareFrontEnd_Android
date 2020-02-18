@@ -36,24 +36,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void register(View view) {
-
-        EditText BunnyNameEditText = findViewById(R.id.BunnyNameEditText);
-
-        EditText BirthDateEditText = findViewById(R.id.OwnerBirthEditText);
-
-        //invalid text
-        String strBunnyName = BunnyNameEditText.getText().toString();
-        String strBirthDate = BirthDateEditText.getText().toString();
-
-        if(TextUtils.isEmpty(strBunnyName)) {
-            BunnyNameEditText.setError("cannot be empty");
-            return;
-        }
-
-        if(TextUtils.isEmpty(strBirthDate)) {
-            BirthDateEditText.setError("cannot be empty");
-            return;
-        }
+        Intent intent = new Intent(this,Registration.class );
+        startActivity(intent);
 
     }
 

@@ -56,11 +56,11 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/SignInButton"
+        android:id="@+id/RegistrationButton"
         android:layout_width="337dp"
         android:layout_height="61dp"
         android:onClick="register"
-        android:text="Registered Now!"
+        android:text="Registration Now!"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -71,17 +71,18 @@
 
     <Button
         android:id="@+id/GuestButton"
-        android:layout_width="309dp"
-        android:layout_height="51dp"
+        android:layout_width="346dp"
+        android:layout_height="60dp"
         android:layout_marginTop="484dp"
         android:onClick="guest"
         android:text="Guest"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.795" />
+        app:layout_constraintVertical_bias="0.769" />
 
     <TextView
         android:id="@+id/textView4"
