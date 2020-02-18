@@ -13,6 +13,11 @@ public class HealthCare extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void NailTrim(View view) {
+        Intent intent = new Intent(this,NailTrimming.class );
+        startActivity(intent);
+    }
+
 
 
     @Override

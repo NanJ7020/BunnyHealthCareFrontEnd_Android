@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.pooptest">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SearchByGoogle"></activity>
+        <activity android:name=".NailTrimming"></activity>
+        <activity android:name=".SearchByGoogle" />
         <activity android:name=".PoopTest" />
         <activity android:name=".HealthCare" />
         <activity android:name=".MainActivity">
