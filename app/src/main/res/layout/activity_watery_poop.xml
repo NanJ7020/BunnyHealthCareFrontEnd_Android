@@ -24,7 +24,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="Watery Poop"
+        android:text="Diarrhea"
         android:textColor="@color/FontColor"
         android:textSize="28sp"
         android:textStyle="bold" />
@@ -41,7 +41,7 @@
             android:layout_height="wrap_content"
             android:textColor="@color/Font1Color"
             android:textSize="24dp"
-            android:text="Watery, no solid pieces, or entirely liquid. \nYou need bring your bunny to see a vet as soon as possible."/>
+            android:text="Rabbits with diarrhea may be infected with deadly parasites or possibly have been exposed to poisons. Very young rabbits with watery runny stools may have been weaned before they're ready."/>
 
         <ImageView
             android:gravity="center"
