@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    tools:context=".PoopTest.HealthPoopActivity">
+
+    <TextView
+        android:id="@+id/poopViewLink"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="top|right"
+        android:text="Poops View"
+        android:onClick="poopView"
+        android:textColor="@color/Font2Color"
+        android:textSize="22sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/healthP_textView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Health Poop"
+        android:textColor="@color/FontColor"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="10">
+
+        <TextView
+            android:id="@+id/health_textView"
+            android:layout_width="fill_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textColor="@color/Font1Color"
+            android:textSize="24dp"
+            android:text="Congrats! Your bunny's poop looks good! \nHealthy poop should be friable and have a stable form."/>
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:gravity="center"
+            android:layout_width="380dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/healthy_poops" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/Font1Color"
+            android:gravity="center"
+            android:textSize="24dp"
+            android:text="Inside you should find lots of chewed up hay."/>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

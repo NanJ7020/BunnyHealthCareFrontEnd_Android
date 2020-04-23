@@ -45,12 +45,12 @@
                 <Button
                     android:layout_width="80dp"
                     android:layout_height="40dp"
-                    android:layout_marginLeft="70dp"
+                    android:layout_marginLeft="10dp"
                     android:layout_gravity="bottom|right"
                     android:layout_weight="1"
                     android:background="@color/colorPrimary"
                     android:onClick="selectVet"
-                    android:text="Select"
+                    android:text="Give a Review"
                     android:textColor="@android:color/background_light"
                     android:textSize="20sp" />
 

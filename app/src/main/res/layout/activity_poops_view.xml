@@ -4,86 +4,61 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
     tools:context=".PoopsView">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="10sp"
-        android:layout_marginStart="10sp"
-        android:layout_marginEnd="10sp"
-        >
 
         <LinearLayout
             android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent">
 
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|right"
+                android:text="Main Menu"
+                android:onClick="mainMenu"
+                android:textColor="@color/Font2Color"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/healthPoop_btn"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:background="@drawable/healthy_poops"
+                android:gravity="center"
+                android:onClick="healthPoop" />
 
             <ImageView
-                android:id="@+id/healthPoop"
-                android:layout_width="390dp"
-                android:layout_height="290dp"
-                android:onClick="healthP_func"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.021"
-                app:srcCompat="@drawable/healthy_poops" />
-
-
-            <ImageView
-                android:id="@+id/cecalPoop"
-                android:layout_width="390dp"
-                android:layout_height="290dp"
-                android:onClick="cecalP_func"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/healthPoop"
+                android:onClick="cecalPoop"
+                android:layout_width="300dp"
+                android:layout_height="210dp"
                 app:srcCompat="@drawable/cecal_poop" />
 
             <ImageView
-                android:id="@+id/stringPoop"
-                android:layout_width="390dp"
-                android:layout_height="270dp"
-                android:onClick="stringP_func"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/cecalPoop"
+                android:onClick="stringPoop"
+                android:layout_width="300dp"
+                android:layout_height="210dp"
                 app:srcCompat="@drawable/stringy_poop" />
 
             <ImageView
-                android:id="@+id/wormPoop"
-                android:layout_width="390dp"
-                android:layout_height="320dp"
-                android:onClick="wormP_func"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/stringPoop"
+                android:onClick="wormPoop"
+                android:layout_width="300dp"
+                android:layout_height="230dp"
                 app:srcCompat="@drawable/worm_poop" />
 
 
             <ImageView
-                android:id="@+id/wateryPoop"
-                android:layout_width="390dp"
-                android:layout_height="320dp"
-                android:onClick="wateryP_func"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/wormPoop"
+                android:onClick="wateryPoop"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
                 app:srcCompat="@drawable/watery_poop" />
-
 
         </LinearLayout>
 
-
-
-
-    </RelativeLayout>
 
 </ScrollView>

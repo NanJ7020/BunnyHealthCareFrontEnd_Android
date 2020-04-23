@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    tools:context=".PoopTest.WateryPoopActivity">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="top|right"
+        android:text="Poops View"
+        android:onClick="poopView"
+        android:textColor="@color/Font2Color"
+        android:textSize="22sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Watery Poop"
+        android:textColor="@color/FontColor"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="10">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textColor="@color/Font1Color"
+            android:textSize="24dp"
+            android:text="Watery, no solid pieces, or entirely liquid. \nYou need bring your bunny to see a vet as soon as possible."/>
+
+        <ImageView
+            android:gravity="center"
+            android:layout_width="380dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/watery_poop" />
+
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:onClick="searchAVet"
+            android:text="Search a Vet"
+            android:textSize="24sp"
+            android:textColor="@android:color/background_light" />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
