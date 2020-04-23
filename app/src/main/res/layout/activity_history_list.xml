@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".ProfileMgmt.history.HistoryRecordListActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="top"
+            android:text="History Record"
+            android:textColor="@color/colorPrimary"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|right"
+            android:onClick="myProfile"
+            android:text="My Profile"
+            android:textColor="@color/Font2Color"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+
+
+    <ListView
+        android:id="@+id/records_listView"
+        android:layout_width="fill_parent"
+        android:layout_weight="15"
+        android:layout_marginBottom="15dp"
+        android:layout_height="wrap_content"/>
+
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.6"
+        android:background="@color/colorPrimary"
+        android:onClick="addRecord"
+        android:text="Add a history record"
+        android:textColor="@android:color/background_light"
+        android:textSize="22sp" />
+
+
+
+
+
+</LinearLayout>

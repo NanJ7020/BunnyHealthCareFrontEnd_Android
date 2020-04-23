@@ -1,31 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
     tools:context=".NailTrimming">
+
+    <TextView
+        android:id="@+id/BackToMainButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:gravity="right"
+        android:onClick="BackToMainMenu"
+        android:text="Main Menu"
+        android:textColor="@color/Font2Color"
+        android:textSize="22sp"
+        android:textStyle="bold" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="282dp"
-        android:layout_height="378dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.206"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
         app:srcCompat="@drawable/nail_trim" />
 
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center|bottom"
+        android:text="I can not do this! "
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:textColor="@color/Font1Color" />
     <Button
-        android:id="@+id/BackToMainButton"
-        android:layout_width="219dp"
-        android:layout_height="60dp"
-        android:onClick="BackToMainMenu"
-        android:text="Back to main menu"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.118" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"
+        android:layout_weight="0.5"
+        android:background="@color/colorPrimary"
+        android:text="Find a vet for me"
+        android:onClick="findVet"
+        android:textColor="@android:color/background_light"
+        android:textSize="22sp" />
+
+
+</LinearLayout>

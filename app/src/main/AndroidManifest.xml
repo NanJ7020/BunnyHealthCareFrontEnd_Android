@@ -11,18 +11,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Registration"></activity>
-        <activity android:name=".NailTrimming" />
-        <activity android:name=".SearchByGoogle" />
-        <activity android:name=".PoopTest" />
-        <activity android:name=".HealthCare" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".Posts.PostMyPostListActivity"></activity>
+        <activity android:name=".Posts.PostAddNewActivity" />
+        <activity android:name=".SearchVet.VetDetailActivity" />
+        <activity android:name=".ProfileMgmt.history.HistoryRecordListActivity" />
+        <activity android:name=".ProfileMgmt.pet.PetAddActivity" />
+        <activity android:name=".ProfileMgmt.history.HistoryRecordDetailActivity" />
+        <activity android:name=".Posts.PostListActivity" />
+        <activity android:name=".Posts.PostDetailActivity" />
+        <activity android:name=".SearchVet.VetSearchActivity" />
+        <activity android:name=".ProfileMgmt.history.HistoryRecordAddActivity" />
+        <activity android:name=".ProfileMgmt.pet.PetListActivity" />
+        <activity android:name=".ProfileMgmt.pet.PetUpdateActivity" />
+        <activity android:name=".ProfileMgmt.user.UserInfoSetActivity" />
+        <activity android:name=".Auth.LogInActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".PoopsView" />
+        <activity android:name=".Auth.RegisterActivity" />
+        <activity android:name=".NailTrimming" />
+        <activity android:name=".HealthCare" />
     </application>
 
 </manifest>

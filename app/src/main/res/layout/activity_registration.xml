@@ -1,105 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Registration">
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    tools:context=".Auth.RegisterActivity">
 
     <EditText
-        android:id="@+id/BunnyNameEditText"
-        android:layout_width="298dp"
-        android:layout_height="44dp"
-        android:ems="10"
-        android:hint="Bunny Name"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.309"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.081" />
+        android:id="@+id/userName_EditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="User Name"
+        android:textSize="24sp" />
+
 
     <EditText
-        android:id="@+id/DateEditText"
-        android:layout_width="299dp"
-        android:layout_height="50dp"
-        android:ems="10"
-        android:hint="Bunny Birth Date"
-        android:inputType="date"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.312"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.18" />
-
-    <EditText
-        android:id="@+id/StateEditText"
-        android:layout_width="128dp"
-        android:layout_height="41dp"
-        android:ems="10"
-        android:hint="State"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.724"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.413" />
-
-    <EditText
-        android:id="@+id/EmailEditText"
-        android:layout_width="301dp"
-        android:layout_height="57dp"
-        android:ems="10"
+        android:id="@+id/email_EditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
         android:hint="E-mail"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.318"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.522" />
+        android:textSize="24sp" />
 
     <Button
-        android:id="@+id/RegisterButton2"
-        android:layout_width="302dp"
-        android:layout_height="57dp"
-        android:text="Register"
+        android:id="@+id/signUpButton"
+        android:onClick="signUp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Sign Up"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/haveAnAccountText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:text="I Have An Account"
+        android:textColor="@color/colorPrimary"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.296"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.628" />
+        android:textStyle="bold"
+        app:fontFamily="sans-serif" />
 
-    <EditText
-        android:id="@+id/WeightEditText"
-        android:layout_width="293dp"
-        android:layout_height="49dp"
-        android:ems="10"
-        android:hint="Weight"
-        android:inputType="number"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.296"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.296" />
+    <Button
+        android:id="@+id/LogInButton"
+        android:onClick="logIn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:text="Log In"
+        android:textSize="24sp" />
 
-    <EditText
-        android:id="@+id/ZipCodeEditText"
-        android:layout_width="151dp"
-        android:layout_height="49dp"
-        android:ems="10"
-        android:hint="Zip Code"
-        android:inputType="number"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.134"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.406" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

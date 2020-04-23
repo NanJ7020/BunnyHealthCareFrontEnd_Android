@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:padding="5dp">
+
+
+    <TextView
+        android:id="@+id/recordsPetName_textView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5sp"
+        android:layout_weight="1"
+        android:text="Pet Name"
+        android:textColor="@color/Font2Color"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/recordsReason_textView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="25dp"
+        android:layout_weight="6"
+        android:text="reason for hospital"
+        android:textColor="@color/Font1Color"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="0.3">
+
+        <TextView
+            android:id="@+id/recordsDate_textView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="25dp"
+            android:layout_weight="1"
+            android:text="Date"
+            android:textColor="@color/Font1Color"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+
+        <Button
+            android:id="@+id/recordsDetail_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="4"
+            android:background="@color/colorPrimary"
+            android:text="Detail" />
+    </LinearLayout>
+
+
+</LinearLayout>

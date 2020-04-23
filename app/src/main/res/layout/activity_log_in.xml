@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    tools:context=".Auth.LogInActivity">
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="E-mail"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/LogInButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
+        android:text="Log In"
+        android:onClick="login"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btn_signup"
+        android:onClick="registered"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Not A Member? Get Registered Now!"
+        android:textAllCaps="false"
+        android:textColor="@color/Font1Color"
+        android:textSize="24sp" />
+
+
+</LinearLayout>

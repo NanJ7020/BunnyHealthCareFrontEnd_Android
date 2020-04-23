@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:padding="10dp">
+
+
+    <ImageView
+        android:id="@+id/pet_imageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@mipmap/ic_launcher_round" />
+
+
+    <TextView
+        android:id="@+id/petName_textView"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/Font1Color"
+        android:textSize="24sp"
+        android:layout_weight="2"/>
+
+    <Button
+        android:id="@+id/petModify_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorPrimary"
+        android:text="Modify"
+        android:onClick="modify"
+        android:textColor="@android:color/background_light"
+        android:layout_weight="4"/>
+
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Posts.PostListActivity">
+
+    <TextView
+        android:onClick="mainMenu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top|right"
+        android:text="Main Menu"
+        android:textColor="@color/Font2Color"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_weight="0.3"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:text="Bunny Community"
+            android:textColor="@color/Font1Color"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_weight="0.5"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="My Posts"
+            android:onClick="myPosts"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:layout_weight="1"
+            android:textColor="@color/Font2Color"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/posts_listView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="19"/>
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,53 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
     tools:context=".HealthCare">
 
-    <Button
-        android:id="@+id/PoopTestButton"
-        android:layout_width="95dp"
-        android:layout_height="95dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:onClick="PpTest"
-        android:text="Poop Test"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.117" />
+    <TextView
+        android:onClick="myProfile"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:gravity="top|right"
+        android:text="My Profile"
+        android:textColor="@color/Font2Color"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="2">
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:onClick="PpTest"
+            android:text="Poop Test"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp" />
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:onClick="NailTrim"
+            android:text="Nail Trim"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp" />
+
+        <Button
+            android:onClick="searchVet"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="Search a Vet"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp" />
+
+        <Button
+            android:onClick="community"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="Community"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+
 
     <Button
-        android:id="@+id/NailTrimButton"
-        android:layout_width="95dp"
-        android:layout_height="95dp"
-        android:onClick="NailTrim"
-        android:text="Nail Trim"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/PoopTestButton"
-        app:layout_constraintVertical_bias="0.07" />
+        android:id="@+id/logOutButton"
+        android:onClick="logOut"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_margin="40dp"
+        android:layout_gravity="right"
+        android:background="@android:color/transparent"
+        android:text="Log Out"
+        android:textColor="@color/Font2Color"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="95dp"
-        android:layout_height="95dp"
-        android:text="Look Vet"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/NailTrimButton"
-        app:layout_constraintVertical_bias="0.113" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
