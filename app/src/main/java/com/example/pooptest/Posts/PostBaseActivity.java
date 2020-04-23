@@ -1,6 +1,7 @@
 package com.example.pooptest.Posts;
 
 import android.content.Intent;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -18,6 +19,18 @@ public class PostBaseActivity extends AcctBaseActivity {
     public static PostService postService=retrofit.create(PostService.class);
     public static int postCount=0;
     public static int myPostCount=0;
+
+
+    //clean all post
+    public static void cleanPost(){
+        postRecords= new ArrayList<>();
+        postCount=0;
+    }
+
+    public static void cleanMyPost(){
+        myPostList= new ArrayList<>();
+        myPostCount=0;
+    }
 
 
     //token validation and verification

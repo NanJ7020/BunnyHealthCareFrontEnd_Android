@@ -117,6 +117,9 @@ public class UserInfoSetActivity extends ProfileMgmtBaseActivity {
                 et_zipcode.setText(profile.getZipcode());
                 et_state.setText(profile.getState());
                 Log.i("TestInfo", "Get me is object from set");
+
+                Toast.makeText(getApplicationContext(),"Succeed to Update File",Toast.LENGTH_SHORT).show();
+
             }
 
             @Override
@@ -142,13 +145,11 @@ public class UserInfoSetActivity extends ProfileMgmtBaseActivity {
 
                 Toast.makeText(getApplicationContext(),"Account Deletion",Toast.LENGTH_SHORT).show();
 
-                user=null;
+                //Delete user,profile,and posts by user id
+                clearAuthData();
 
-                if (user == null) {
-                    startActivity(new Intent(getApplicationContext(), LogInActivity.class));
-                    finish();
-                }
-
+                //Check validation
+                CheckUserToken();
             }
 
             @Override
