@@ -20,8 +20,8 @@
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_gravity="left"
-            android:background="@mipmap/ic_launcher_round" />
+            android:layout_gravity="left"/>
+
 
         <LinearLayout
             android:layout_width="fill_parent"
@@ -302,7 +302,7 @@
                 <TextView
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:text="Labtory"
+                    android:text="Laboratory"
                     android:textStyle="bold"
                     android:textColor="@color/Font2Color"
                     android:textSize="20sp"
@@ -360,7 +360,7 @@
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:text="Flea Cheak"
+                android:text="Flea Check"
                 android:textStyle="bold"
                 android:textColor="@color/Font2Color"
                 android:textSize="20sp"
