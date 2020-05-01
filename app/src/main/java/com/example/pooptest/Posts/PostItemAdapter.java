@@ -41,9 +41,6 @@ public class PostItemAdapter extends ArrayAdapter<Post> {
         TextView postsPostUserName=view.findViewById(R.id.postUserName_textView);
         TextView postsPostDate=view.findViewById(R.id.postDate_textView);
 
-        //*************gravatar should be Image url****************
-        ImageView postsPostVetImg=view.findViewById(R.id.postImg_imgView);
-
         Button postsDetailBtn=view.findViewById(R.id.postDetail_btn);
 
         postsPostTitle.setText(postList.get(position).getPostTitle());

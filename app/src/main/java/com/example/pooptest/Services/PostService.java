@@ -27,6 +27,4 @@ public interface PostService {
     @DELETE("/api/posts/post/{post_id}")
     Call<Post> deletePostByPostID(@Path("post_id") String post_id,
                                   @Header("x-auth-token") String authToken);
-
-
 }
