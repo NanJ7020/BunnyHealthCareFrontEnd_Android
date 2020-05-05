@@ -50,9 +50,6 @@ public class PostMyPostListActivity extends PostBaseActivity  {
                 ArrayList<Post> posts = getAllPostResponse.getPosts();
 
 
-
-
-
                 listView=findViewById(R.id.myPosts_listView);
 
                 PostItemAdapter adapter_mypostItem=new PostItemAdapter(getApplicationContext(),R.layout.list_view_post_my_item,myPostList);

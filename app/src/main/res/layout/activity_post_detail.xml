@@ -222,7 +222,8 @@
                     android:text="Take care Bunny"
                     android:textStyle="bold"
                     android:textColor="@color/Font2Color"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:onClick="takeCareBunnyCheck"/>
 
                 <TextView
                     android:id="@+id/postCareBun_textView"

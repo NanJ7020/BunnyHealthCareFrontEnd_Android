@@ -87,7 +87,7 @@ public class PostDetailActivity extends PostBaseActivity {
 
                 if (!response.isSuccessful()) {
                     if (response.code() == 400) {
-                        Log.i("testpoost",""+response.message());
+                        Log.i("testpostDe",""+response.message());
                         Toast.makeText(getApplicationContext(),"Post not Found",Toast.LENGTH_SHORT).show();
                     }
                     return;
@@ -107,6 +107,32 @@ public class PostDetailActivity extends PostBaseActivity {
             public void onFailure(Call<Post> call, Throwable t) {
                 Toast.makeText(getApplicationContext(),"Post Delete",Toast.LENGTH_SHORT).show();
                 Log.i("testpoost","failed reso: "+t.getMessage());
+            }
+        });
+    }
+
+    public void takeCareBunnyCheck(View view){
+        Call<Post> call=postService.takeCareBunny(post_id,token);
+        call.enqueue(new Callback<Post>() {
+            @Override
+            public void onResponse(Call<Post> call, Response<Post> response) {
+                if (!response.isSuccessful()) {
+                    if (response.code() == 400) {
+                        Log.i("takcareBun","400fail: "+response.message());
+                        Toast.makeText(getApplicationContext(),"Post not Found",Toast.LENGTH_SHORT).show();
+                    }
+                    Log.i("takcareBun","no 400: "+response.message());
+                    return;
+                }
+                Intent intent=new Intent(getApplicationContext(),PostListActivity.class);
+                startActivity(intent);
+
+                Log.i("takcareBun","success");
+            }
+
+            @Override
+            public void onFailure(Call<Post> call, Throwable t) {
+                Log.i("takecareBun","failed: "+t.getMessage());
             }
         });
     }
