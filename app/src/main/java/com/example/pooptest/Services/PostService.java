@@ -29,9 +29,30 @@ public interface PostService {
     Call<Post> deletePostByPostID(@Path("post_id") String post_id,
                                   @Header("x-auth-token") String authToken);
 
-    @PUT("api/posts/useful/{post_id}")
+
+    @PUT("/api/posts/useful/{post_id}")
     Call<Post> takeCareBunny(@Path("post_id") String post_id,
                              @Header("x-auth-token") String authToken);
 
+    @PUT("/api/posts/spay_neutere/{post_id}")
+    Call<Post> spayorneut(@Path("post_id") String post_id,
+                          @Header("x-auth-token") String authToken);
+
+    @PUT("/api/posts/nailTrim/{post_id}")
+    Call<Post> nailTrim(@Path("post_id") String post_id,
+                        @Header("x-auth-token") String authToken);
+
+    @PUT("/api/posts/fleaCheck/{post_id}")
+    Call<Post> fleaCheck(@Path("post_id") String post_id,
+                         @Header("x-auth-token") String authToken);
+
+
+    @PUT("/api/posts/laboratory/{post_id}")
+    Call<Post> laboratory(@Path("post_id") String post_id,
+                          @Header("x-auth-token") String authToken);
+
+    @PUT("/api/posts/GI_stasis/{post_id}")
+    Call<Post> GIstasis(@Path("post_id") String post_id,
+                        @Header("x-auth-token") String authToken);
 
 }

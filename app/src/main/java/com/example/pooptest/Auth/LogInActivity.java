@@ -3,6 +3,7 @@ package com.example.pooptest.Auth;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -29,6 +30,7 @@ public class LogInActivity extends AuthBaseActivity {
 
     public void login(View view) {
         String email = emailEditText.getText().toString().trim();
+        Log.i("log","lalal");
 
         if (TextUtils.isEmpty(email)) {
             Toast.makeText(getApplicationContext(),"Enter email address", Toast.LENGTH_SHORT).show();
@@ -43,6 +45,7 @@ public class LogInActivity extends AuthBaseActivity {
             @Override
             public void onResponse(Call<LoginResponse> call, Response<LoginResponse> response) {
                 if (!response.isSuccessful()) {
+                    Log.i("log","failLogin:"+response);
                     Toast.makeText(getApplicationContext(),"Invalid Credentials",Toast.LENGTH_SHORT).show();
                     return;
 
@@ -60,7 +63,7 @@ public class LogInActivity extends AuthBaseActivity {
 
             @Override
             public void onFailure(Call<LoginResponse> call, Throwable t) {
-
+                Log.i("log","failed:"+t);
             }
         });
 

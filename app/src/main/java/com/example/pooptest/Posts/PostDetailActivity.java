@@ -24,7 +24,6 @@ public class PostDetailActivity extends PostBaseActivity {
 
     String post_id="";
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -65,8 +64,6 @@ public class PostDetailActivity extends PostBaseActivity {
 
         //Log.i("testpoost","detail post info: "+item.getUser());
         post_id=item.get_id().toString();
-
-
 
     }
 
@@ -119,11 +116,14 @@ public class PostDetailActivity extends PostBaseActivity {
                 if (!response.isSuccessful()) {
                     if (response.code() == 400) {
                         Log.i("takcareBun","400fail: "+response.message());
-                        Toast.makeText(getApplicationContext(),"Post not Found",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(),"You are already checked it",Toast.LENGTH_SHORT).show();
                     }
                     Log.i("takcareBun","no 400: "+response.message());
                     return;
                 }
+
+                Toast.makeText(getApplicationContext(),"Thank you give a review",Toast.LENGTH_SHORT).show();
+
                 Intent intent=new Intent(getApplicationContext(),PostListActivity.class);
                 startActivity(intent);
 
@@ -136,4 +136,133 @@ public class PostDetailActivity extends PostBaseActivity {
             }
         });
     }
+
+    public void nailTrimCheck(View view){
+       Call<Post> call=postService.nailTrim(post_id,token);
+       call.enqueue(new Callback<Post>() {
+           @Override
+           public void onResponse(Call<Post> call, Response<Post> response) {
+               if (!response.isSuccessful()) {
+                   if (response.code() == 400) {
+                       Log.i("nailtrim","400fail: "+response.message());
+                       Toast.makeText(getApplicationContext(),"You are already checked it",Toast.LENGTH_SHORT).show();
+                       return;
+                   }
+                   Log.i("nailtrim","no 400: "+response.message());
+                   return;
+               }
+               Toast.makeText(getApplicationContext(),"Nail Trim Checked",Toast.LENGTH_SHORT).show();
+
+               Intent intent=new Intent(getApplicationContext(),PostListActivity.class);
+               startActivity(intent);
+           }
+
+           @Override
+           public void onFailure(Call<Post> call, Throwable t) {
+               Log.i("nailtrim","failed: "+t.getMessage());
+           }
+       });
+    }
+
+    public void spayAndNeutCheck(View view){
+        Call<Post> call=postService.spayorneut(post_id,token);
+        call.enqueue(new Callback<Post>() {
+            @Override
+            public void onResponse(Call<Post> call, Response<Post> response) {
+                if (!response.isSuccessful()) {
+                    if (response.code() == 400) {
+                        Toast.makeText(getApplicationContext(),"You are already checked it",Toast.LENGTH_SHORT).show();
+                    }
+                    return;
+                }
+
+                Toast.makeText(getApplicationContext(),"Spay Checked",Toast.LENGTH_SHORT).show();
+
+                Intent intent=new Intent(getApplicationContext(),PostListActivity.class);
+                startActivity(intent);
+
+            }
+
+            @Override
+            public void onFailure(Call<Post> call, Throwable t) {
+
+            }
+        });
+    }
+
+    public void fleaCheck(View view){
+        Call<Post> call=postService.fleaCheck(post_id,token);
+        call.enqueue(new Callback<Post>() {
+            @Override
+            public void onResponse(Call<Post> call, Response<Post> response) {
+                if (!response.isSuccessful()) {
+                    if (response.code() == 400) {
+                        Toast.makeText(getApplicationContext(),"You are already checked it",Toast.LENGTH_SHORT).show();
+                    }
+                    return;
+                }
+
+                Toast.makeText(getApplicationContext(),"Flea Checking checked",Toast.LENGTH_SHORT).show();
+
+                Intent intent=new Intent(getApplicationContext(),PostListActivity.class);
+                startActivity(intent);
+            }
+
+            @Override
+            public void onFailure(Call<Post> call, Throwable t) {
+
+            }
+        });
+    }
+
+    public void laboratory(View view){
+        Call<Post> call=postService.laboratory(post_id,token);
+        call.enqueue(new Callback<Post>() {
+            @Override
+            public void onResponse(Call<Post> call, Response<Post> response) {
+                if (!response.isSuccessful()) {
+                    if (response.code() == 400) {
+                        Toast.makeText(getApplicationContext(),"You are already checked it",Toast.LENGTH_SHORT).show();
+                    }
+                    return;
+                }
+
+                Toast.makeText(getApplicationContext(),"Laboratory checked",Toast.LENGTH_SHORT).show();
+
+                Intent intent=new Intent(getApplicationContext(),PostListActivity.class);
+                startActivity(intent);
+            }
+
+            @Override
+            public void onFailure(Call<Post> call, Throwable t) {
+
+            }
+        });
+    }
+
+    public void GIstasis(View view){
+        Call<Post> call=postService.GIstasis(post_id,token);
+        call.enqueue(new Callback<Post>() {
+            @Override
+            public void onResponse(Call<Post> call, Response<Post> response) {
+                if (!response.isSuccessful()) {
+                    if (response.code() == 400) {
+                        Toast.makeText(getApplicationContext(),"You are already checked it",Toast.LENGTH_SHORT).show();
+                    }
+                    return;
+                }
+
+                Toast.makeText(getApplicationContext(),"GI stasis checked",Toast.LENGTH_SHORT).show();
+
+                Intent intent=new Intent(getApplicationContext(),PostListActivity.class);
+                startActivity(intent);
+            }
+
+            @Override
+            public void onFailure(Call<Post> call, Throwable t) {
+
+            }
+        });
+    }
 }
+
