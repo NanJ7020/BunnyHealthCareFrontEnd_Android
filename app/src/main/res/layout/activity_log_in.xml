@@ -40,7 +40,7 @@
         android:onClick="registered"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="10dp"
         android:text="Not A Member? Get Registered Now!"
         android:textAllCaps="false"
         android:textColor="@color/Font1Color"
