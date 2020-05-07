@@ -214,7 +214,8 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:onClick="takeCareBunnyCheck">
 
                 <TextView
                     android:layout_width="fill_parent"
@@ -238,7 +239,8 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:layout_weight="1"
-                android:layout_marginLeft="3dp">
+                android:layout_marginLeft="3dp"
+                android:onClick="spayAndNeutCheck">
 
                 <TextView
                     android:layout_width="fill_parent"
@@ -270,11 +272,12 @@
 
 
             <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_weight="1"
-            android:layout_marginLeft="3dp">
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_marginLeft="3dp"
+                android:onClick="nailTrimCheck">
 
             <TextView
                 android:layout_width="fill_parent"
@@ -291,14 +294,15 @@
                 android:layout_height="wrap_content"
                 android:text="0"
                 android:layout_weight="3"/>
-        </LinearLayout>
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:layout_weight="1"
-                android:layout_marginLeft="3dp">
+                android:layout_marginLeft="3dp"
+                android:onClick="laboratory">
 
                 <TextView
                     android:layout_width="fill_parent"
@@ -332,7 +336,8 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_weight="1"
-            android:layout_marginLeft="3dp">
+            android:layout_marginLeft="3dp"
+            android:onClick="GIstasis">
 
             <TextView
                 android:layout_width="fill_parent"
@@ -356,7 +361,8 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_weight="1"
-            android:layout_marginLeft="3dp">
+            android:layout_marginLeft="3dp"
+            android:onClick="fleaCheck">
 
             <TextView
                 android:layout_width="fill_parent"

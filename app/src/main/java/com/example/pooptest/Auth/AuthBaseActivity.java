@@ -9,7 +9,7 @@ import com.example.pooptest.Services.AuthService;
 public class AuthBaseActivity extends AcctBaseActivity {
 
     public static AuthService authService = retrofit.create(AuthService.class);
-
+    
     @Override
     protected void onStart() {
         super.onStart();
